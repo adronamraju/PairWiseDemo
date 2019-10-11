@@ -13,20 +13,4 @@ public enum State {
         this.weight = i;
     }
 
-    public static State getStateFromString(String string){
-        string = string.toUpperCase();
-        switch (string){
-            case "TX":
-                return TX;
-            case "NM":
-                return NM;
-            case "MA":
-                return MA;
-            case "NY":
-                return NY;
-            default:
-                return null;
-        }
-
-    }
 }

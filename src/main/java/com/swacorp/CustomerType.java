@@ -13,22 +13,4 @@ public enum CustomerType {
         this.weight = i;
     }
 
-    public static CustomerType getCustomerFromString(String string) {
-        string = string.toUpperCase();
-        switch (string) {
-            case "LARGE_COMPANY":
-                return LARGE_COMPANY;
-            case "SMALL_COMPANY":
-                return SMALL_COMPANY;
-            case "INDIVIDUAL":
-                return INDIVIDUAL;
-            case "INTERNATIONAL_COMPANY":
-                return INTERNATIONAL_COMPANY;
-            case "INTERNATIONAL_INDIVIDUAL":
-                return INTERNATIONAL_INDIVIDUAL;
-            default:
-                return null;
-        }
-    }
-
 }

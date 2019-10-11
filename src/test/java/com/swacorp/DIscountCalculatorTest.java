@@ -65,7 +65,7 @@ public class DIscountCalculatorTest {
             }else{
                 expectedVal += 5;
             }
-            expectedVal += (CustomerType.getCustomerFromString(customer)).weight + (State.getStateFromString(state)).weight;
+            expectedVal += (CustomerFromString.getCustomerFromString(customer)).weight + (StateFromString.getStateFromString(state)).weight;
             if(testCaseInfo.items > 0)
                 testCaseInfo.expectedValue = expectedVal;
             else{
